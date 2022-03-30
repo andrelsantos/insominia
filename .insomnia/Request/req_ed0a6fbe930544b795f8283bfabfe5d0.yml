@@ -1,17 +1,25 @@
 _id: req_ed0a6fbe930544b795f8283bfabfe5d0
 type: Request
-parentId: wrk_81275d83138e41b2a2f6b01ffdca6be1
-modified: 1648601703141
+parentId: fld_dc80632a3be345558230ed5e4f81dcf1
+modified: 1648612255694
 created: 1648601703141
-url: ""
-name: New Request
+url: "{{ _.base_url }}/appointment/indicator/treatment/group"
+name: ""
 description: ""
-method: GET
-body: {}
+method: POST
+body:
+  mimeType: application/json
+  text: '{"startDate":"2022-03-01","endDate":"2022-03-29","period":{"label":"Esse
+    mês","value":"this_month"},"groupId":1,"clinicalId":1}'
 parameters: []
-headers: []
-authentication: {}
-metaSortKey: -1648601703141
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c13c8a987a384e13b74465fd17fdc707
+authentication:
+  type: bearer
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJ1c2VySWRcIjozLFwibmFtZVwiOlwiSnVsaWFuYSBSb2NoYVwiLFwicm9sZVwiOlwiQURNSU5cIixcInJvbGVEZXNjcmlwdGlvbkJSXCI6XCJFcXVpcGUgYWRtaW5pc3RyYXRpdmFcIn0iLCJyb2xlIjoiQURNSU4iLCJuYW1lIjoiSnVsaWFuYSBSb2NoYSIsImV4cCI6MTY1MTE5NDcxMiwidXNlcklkIjozLCJpYXQiOjE2NDg2MDI3MTMsImF1dGhvcml0aWVzIjpbIkFETUlOIl19.-vGYtiawLTOWOn_6X4fMZWT0wxJWkEyavV58f1OJDMiyAeVpnBuQ3NJecpzJHr9eT54TgJcbPNYs8ca2ZSMAhg
+metaSortKey: -1648604136136
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

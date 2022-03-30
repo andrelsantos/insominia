@@ -1,0 +1,14 @@
+_id: env_c769bea3c42249c3a0647949fef9674b
+type: Environment
+parentId: env_e8fabea9c674ec45a8054d62d042d864c15c07e6
+modified: 1648602892130
+created: 1648602421757
+name: Dev
+data:
+  base_url: http://apiv2.signa.med.br
+dataPropertyOrder:
+  "&":
+    - base_url
+color: "#1e3db8"
+isPrivate: false
+metaSortKey: 1648602421757
